@@ -1,0 +1,26 @@
+body{
+    width: 90%;
+    margin: 0.5em auto;
+    background-color: #d8d8d8;
+    font-family: "EB Garamond";
+}
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.column{
+  flex-basis: 29%;
+  flex-grow: 1;
+  min-width: 15em;
+}
+
+.item{
+    margin: 0.2em;
+    padding: 0 1em;
+    text-align: justify;
+    border: 1px solid #b7b7b7;
+    background-color: white;
+}
