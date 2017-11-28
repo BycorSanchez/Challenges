@@ -16,12 +16,12 @@ body {
 }
 
 .subtitle {
-    margin: 0;
-    font-family: 'Arizonia', cursive;
-    font-size: 3em;
-    transform: translate(0, -60%);
-    position: relative;
-    z-index: -1;
+	margin: 0;
+	font-family: 'Arizonia', cursive;
+	font-size: 3em;
+	transform: translate(0, -70%);
+	position: relative;
+	z-index: 1;
 }
 
 
