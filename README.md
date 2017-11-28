@@ -1,2 +1,2 @@
 # Challenges
-#### HTMl, CSS, JavaScript challenges and more!
+#### HTML, CSS, JavaScript challenges and more!
