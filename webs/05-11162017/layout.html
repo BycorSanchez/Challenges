@@ -1,0 +1,60 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<meta charset="utf-8">
+	<title>Login / Sign up</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="behavior.js"></script>
+</head>
+<body>
+	<form id="login">
+		<div class="button-panel">
+			<input type="button" value="Log in" class="top-button selected-button">
+			<input type="button" value="Sign up" class="top-button unselected-button">
+		</div>
+		<h2 class="title">Sign up for free</h2>
+		<label for="email">Email</label>
+		<input type="email" name="email" placeholder="you@example.com">	
+		<label for="password">Password</label>
+		<input type="password" name="password" placeholder="Password">
+		<div class="links">
+			<input type="checkbox" name="remember" value="Remember" checked>
+			<label for="remember">Remember me</label>
+			<a class="forgot-password" href="#">Forgot password?</a>
+		</div>
+		<input type="submit" value="Get in" class="selected-button">
+	</form>
+
+	<form id="signup" class="hidden">
+		<div class="button-panel">
+			<input type="button" value="Log in" class="top-button unselected-button">
+			<input type="button" value="Sign up" class="top-button selected-button">
+		</div>
+		<h2 class="title">Register here</h2>
+		<label for="firstname">First name</label>
+		<input type="text" name="firstname" placeholder="First name">
+		<label for="lastname">Last name</label>
+		<input type="text" name="lastname" placeholder="Last name">
+		<label for="email">Email</label>
+		<input type="email" name="email" placeholder="you@example.com">
+		<div>
+			<label for="password">Password</label><br>
+			<label for="password" class="description">5 or more characters</label>
+		</div>
+		<input type="password" name="password" placeholder="Password">
+		<input type="submit" value="Get started" class="selected-button">
+	</form>
+
+	<form id="psw-reset" class="hidden">
+		<h2 class="title">Enter your email to reset your password</h2>
+		<label for="email">Email</label>
+		<input type="email" name="email" placeholder="you@example.com">
+
+		<div class="button-panel">
+			<input type="submit" value="Reset password" class="selected-button">
+			<input type="button" value="Cancel" class="cancel-revocery unselected-button">
+		</div>
+	</form>
+</body>
+</html>

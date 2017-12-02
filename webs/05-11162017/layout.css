@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #9ea5ab;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.description{
+	font-style: italic;
+	font-size: 0.75em;
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 22em;
+    padding: 1.2em;
+    background-color: #24323D;
+}
+
+.button-panel {
+    display: flex;
+    justify-content: center;
+}
+
+.button-panel input {
+    max-width: 50%;
+    flex-grow: 1;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    margin: 0.6em 0 0.5em 0;
+}
+
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    padding: 3px 5px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #9ea5ab;
+    background: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+
+input[type="button"],
+input[type="submit"] {
+    border: none;
+    border-radius: 0;
+    font-size: 1em;
+    padding: 0.6em 0;
+}
+
+input:focus {
+    border-color: #1bb187;
+    outline: 0 none;
+}
+
+.links {
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+.forgot-password {
+    float: right;
+    color: #1bb187;
+}
+
+.forgot-password:visited {
+    color: #0b6d52;
+}
+
+.selected-button {
+    color: white;
+    background-color: #1AB188;
+}
+
+.unselected-button {
+    background-color: #43525A;
+}
+
+.unselected-button:hover {
+    background-color: #51626b;
+}
