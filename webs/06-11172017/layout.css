@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	color: #efefef;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+	display: grid;
+	grid-template-rows: minmax(4em, 1fr) auto;
+	grid-template-columns: 10% repeat(3, 1fr) 10%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+	grid-template-areas: ". header header header ."
+						 ". menu profile newsletter .";
+
+	background-color: #1F253D;
+	margin-top: 1%;
+}
+
+.header{
+	height: 100%;
+	grid-area: header;
+}
+
+.col1{
+	grid-area: menu;
+}
+
+.col2{
+	grid-area: profile;	
+}
+
+.col3{
+	grid-area: newsletter;
+}
+
+.navlist{
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.navlist li{
+	width: 14%;
+}
+
+.navlist li:hover{
+	color: #1d8e90;
+}
+
+.navlist li:last-child{
+	margin-left: auto;	
+}
+
+.side-menu{
+	background-color: #394264;
+}
+
+.side-menu li{
+    padding: 1.3em 15%;
+	text-align: left;
+	border-top: 2px solid #1F253D;
+}
+
+
+.side-menu li:hover{
+	color: #1d8e90;
+}
+
+.info{
+	padding: 2em;
+}
+
+.stats{
+	display: flex;
+	flex-direction: row;
+	min-height: 2em;
+    align-items: center;
+}
+
+.stat{
+	width: 33%;
+}
+
+.stat1{
+
+}
+
+.profile img{
+	border-radius: 50%;
+    height: 9em;
+    width: 9em;
+    object-fit: cover;
+}
+
+.newsletter form{
+	display: flex;
+	flex-direction: column;
+}
+
+input[type=email] {
+    padding: 10px 40px;
+    background-color: #50597B;
+	color: lightgrey;	
+    border-radius: 0;
+    border: 1px solid lightgrey;
+    font-size: 1em;
+}
+
+input:focus {
+    border-color: #11A8AB;
+    outline: 0 none;
+}
+
+.button{
+    padding: 15px 40px;
+    margin: 2em;
+    border: none;
+    font-size: 1em;
+}
+
+.title{
+    padding: 1em 0.5em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.highlight{
+	background-color: #11A8AB;
+}
+
+.panel{
+	background-color: #394264;
+	border-radius: 0.5em;
+    overflow: hidden;
+}
