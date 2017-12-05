@@ -84,7 +84,7 @@ body {
     background-color: #394264;
 }
 
-.side-menu li {
+.side-menu a {
     display: flex;
     min-height: 3em;
     align-items: center;
@@ -94,7 +94,7 @@ body {
     border-top: 2px solid #1F253D;
 }
 
-.side-menu li a:hover {
+.side-menu a:hover {
     color: #1d8e90;
 }
 
