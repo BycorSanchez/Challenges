@@ -21,7 +21,7 @@ do{
 		console.log("I'm sorry sr, that's not an age. I'm expecting a number");
 	}
 	else{
-		console.log("I could have never guess that you were " + age + " years old :O");
+		console.log("I would have never guessed that you were " + age + " years old :O");
 	}
 }while(!isNumber);
 
