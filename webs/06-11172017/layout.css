@@ -49,7 +49,7 @@ body {
     height: 100%;
 }
 
-.navlist li {
+.navlist a {
     height: 100%;
     width: 14%;
     display: flex;
@@ -57,12 +57,27 @@ body {
     justify-content: center;
 }
 
-.navlist li:hover {
+.navlist a:hover {
     background-color: #1d8e90;
 }
 
-.navlist li:last-child {
+.navlist a:last-child {
     margin-left: auto;
+}
+
+.navlist img {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    margin-left: 6%;
+}
+
+.navlist .notification {
+    font-size: 0.8em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: red;
+    transform: translate(0, -34%);
 }
 
 .side-menu {
@@ -170,25 +185,10 @@ input:focus {
     overflow: hidden;
 }
 
-.me img {
-    width: 2em;
-    height: 2em;
-    vertical-align: middle;
-    margin-left: 6%;
-}
-
 .profile-image {
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 1.5em black;
-}
-
-.navlist .notification {
-    font-size: 0.8em;
-    width: 1em;
-    border-radius: 50%;
-    background-color: red;
-    transform: translate(0, -34%);
 }
 
 a:link {
@@ -208,7 +208,7 @@ ul {
         grid-template-areas: "header" "menu" "profile" "newsletter";
     }
 
-    .navlist li {
+    .navlist a {
         width: 19%;
     }
 }
