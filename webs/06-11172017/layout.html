@@ -1,52 +1,62 @@
 <html>
+
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="layout.css">
-	<meta charset="utf-8">
-	<title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <meta charset="utf-8">
+    <title>Dashboard</title>
 </head>
+
 <body>
-	<div class="header">
-		<ul class="navlist panel">
-			<li>Settings</li>
-			<li>Account</li>
-			<li>Messages</li>
-			<li>Favorites</li>
-			<li class="me">Me</li>
-		</ul>
-	</div>
-	<div class="col1">
-		<div class="side-menu panel">
-			<h2 class="title highlight">MENU BOX</h2>
-			<ul>
-				<li>Messages</li>
-				<li>Invites</li>
-				<li>Events</li>
-				<li>Account Settings</li>
-				<li>Stadistics</li>
-			</ul>
-		</div>
-	</div>
-	<div class="col2">
-		<div class="profile panel">
-			<div class="info">
-				<img src="https://www.thefamouspeople.com/profiles/images/travis-fimmel-1.jpg" alt="Profile Image">
-				<h2>Travis Fimmel</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-			</div>
-			<ul class="stats">
-				<li class="stat stat1">134</li>
-				<li class="stat stat2">98</li>
-				<li class="stat stat3">24</li>
-			</ul>
-		</div>
-	</div>
-	<div class="col3">
-		<form action="#" class="newsletter panel">
-			<h2 class="title">Join the newsletter</h2>
-			<input type="email" placeholder="you@example.com"><br>
-			<input type="submit" value="SUBSCRIBE" class="button highlight">
-		</form>
-	</div>
+    <div class="header">
+        <ul class="navlist panel">
+            <li><a href="#">Settings</li>
+			<li><a href="#">Account</a></li>
+            <li><a href="#">Messages</a><span class="notification">3</span></a>
+            </li>
+            <li><a href="#">Favorites</a></li>
+            <li class="me">
+                <a href="#">
+					Me
+					<img class="profile-image" src="https://www.thefamouspeople.com/profiles/images/travis-fimmel-1.jpg" alt="Profile Image">
+				</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col1">
+        <div class="side-menu panel">
+            <h2 class="title highlight">MENU BOX</h2>
+            <ul>
+                <li><a href="#">Messages</a><span class="notification">31</span></li>
+                <li><a href="#">Invites</a><span class="notification">17</span></li>
+                <li><a href="#">Events</a><span class="notification">2</span></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Stadistics</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col2">
+        <div class="profile panel">
+            <div class="info">
+                <img class="profile-image" src="https://www.thefamouspeople.com/profiles/images/travis-fimmel-1.jpg" alt="Profile Image">
+                <h2>Travis Fimmel</h2>
+                <p>Australian actor and former model</p>
+            </div>
+            <ul class="stats">
+                <li class="stat stat1">134</li>
+                <li class="stat stat2">98</li>
+                <li class="stat stat3">24</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col3">
+        <form action="#" class="newsletter panel">
+            <h2 class="title">Join the newsletter</h2>
+            <input type="email" placeholder="you@example.com" required>
+            <br>
+            <input type="submit" value="SUBSCRIBE" class="button highlight">
+        </form>
+    </div>
 </body>
+
 </html>
