@@ -1,0 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #3c3838f2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+table {
+    margin: 3em auto;
+    width: 41em;
+    border-collapse: collapse;
+}
+
+td,
+th {
+	padding: 4px 10px;
+    text-align: left;
+}
+
+.header1{
+	color: white;
+	background-color: #EA6153;
+}
+
+.header2{
+	color: white;
+	background-color: #27AE60;
+}
+
+tr {
+	background: white;
+}
+
+tr:nth-child(even) {
+	background: #E9E9E9;
+}
