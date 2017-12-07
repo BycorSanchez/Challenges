@@ -43,7 +43,7 @@ function changePowerTotal(totalPower, generatorID, status, currentPower) {
         totalPower -= currentPower;
         if (totalPower < 0) totalPower = 0; //Avoid negative totalPower
 
-        alert("Generator #" + generatorID + " is now off, adding " + currentPower + "MW, for a total of " + totalPower + "MW!");
+        alert("Generator #" + generatorID + " is now off, removing " + currentPower + "MW, for a total of " + totalPower + "MW!");
     }
     return totalPower;
 }
