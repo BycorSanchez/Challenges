@@ -1,4 +1,3 @@
-
 //Task1
 var list = [1, 2, 3, 7, 5, 6, 7, 8, 9];
 list[3] = 4;
@@ -22,10 +21,14 @@ var eigthiesMovies = [movie1, movie2];
 var infant = eigthiesMovies[1][4];
 
 //Task6
+var movie = eigthiesMovies[1].join(" ");
+alert("The movie name is: " + movie);
+
+//Task6 - Old style alternative
 var movie = "";
 
-for(var i = 1; i < eigthiesMovies[1].length; i++){
-	movie += " " + eigthiesMovies[1][i];
+for (var i = 0; i < eigthiesMovies[1].length; i++) {
+    movie += " " + eigthiesMovies[1][i];
 }
 movie = movie.substring(1);
 
