@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    color: white;
+    padding-top: 2em;
+}
+
+/*Background fixed and background cover don't fit together in mobile*/
+.parallax {
+    background-image: url('https://image.ibb.co/fzFzHw/landscape.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#cover {
+    margin: 0 1em;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#cover button {
+    margin-top: 15%;
+}
+
+
+.logo {
+    padding-bottom: 3%;
+}
+
+.navlist {
+    padding-bottom: 13%;
+}
+
+.navlist a {
+    color: white;
+    text-decoration: none;
+    padding: 0 2%;
+    border-right: 2px solid orange;
+}
+
+.navlist a:last-child {
+    border: none;
+}
+
+.navlist a:hover {
+    color: orange;
+}
+
+.title {
+    float: left;
+    width: 100%;
+}
+
+.title h1 {
+    padding-bottom: 1em;
+}
+
+.default-button {
+    padding: 0.6em 1.5em;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-style1 {
+    color: white;
+    background-color: orange;
+}
+
+.button-style1:active {
+    background-color: #d28e13;
+}
+
+.button-style2 {
+    color: orange;
+    background-color: white;
+}
+
+.button-style2:active {
+    opacity: 0.7;
+}
+
+.style1 {
+    color: orange;
+    text-transform: uppercase;
+}
+
+.fa-star-o {
+    font-size: 0.35em;
+    vertical-align: middle;
+}
+
+#work {
+    margin-top: 1em;
+}
+
+.areas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+.area {
+    opacity: 0.9;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    max-width: 25em;
+    min-width: 17em;
+    margin: 0.8em 1.4em;
+    padding: 1em 2em 1em 2em;
+}
+
+footer {
+    text-align: center;
+    background-color: orange;
+    opacity: 0.9;
+    margin-top: 5em;
+    padding: 2% 0;
+}
+
+footer button {
+    margin: 1em 0;
+}
+
+.section-title {
+    margin-left: 8%;
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.line-size {
+    max-width: 7em;
+    height: 3px;
+    border: none;
+}
+
+.line-style1 {
+    background-color: orange;
+    border: none;
+}
+
+.line-style2 {
+    background-color: #000000ad;
+    border: none;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info h3 {
+    margin: 0 2em;
+}
+
+.links .fa {
+    color: white;
+    margin: 0 0.5em;
+}
+
+.links .fa:hover {
+    font-size: 2.3em;
+    transition: 0.18s ease-out;
+}
+
+.fa-facebook:hover {
+    color: #3c5898;
+}
+
+.fa-twitter:hover {
+    color: #1ea1f2;
+}
+
+.fa-github:hover {
+    color: #25292f;
+}
+
+.fa-linkedin:hover {
+    color: #0076b5;
+}
