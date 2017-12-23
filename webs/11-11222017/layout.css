@@ -95,7 +95,7 @@ body {
 }
 
 .fa-star-o {
-    font-size: 0.35em;
+    font-size: 0.35em !important;
     vertical-align: middle;
 }
 
