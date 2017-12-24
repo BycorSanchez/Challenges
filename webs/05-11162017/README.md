@@ -2,12 +2,14 @@
 https://codepen.io/bycorsanchez/full/mqvrLW/
 
 # Preview
-
-![Login Preview](images/preview-login.jpg)
 *Login form*
 
-![Sign Up Preview](images/preview-signup.jpg)
+![Login Preview](images/preview-login.png)
+
 *Sign up form*
 
-![Forgot Password Preview](images/preview-forgot.jpg)
-*Forgot Password form*
+![Sign Up Preview](images/preview-signup.png)
+
+*Forgot password form*
+
+![Forgot Password Preview](images/preview-forgot.png)
