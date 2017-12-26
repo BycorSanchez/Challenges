@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Alice|Playfair+Display');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.pattern {
+    background-image: url(images/ae.jpg);
+    background-repeat: repeat;
+}
+
+.container {
+    background: white;
+    border-radius: 0.5em;
+    margin: 5em auto;
+    width: 21em;
+}
+
+button {
+    font-family: 'Alice', serif;
+    color: white;
+    font-size: 1em;
+    background: #2d495d;
+    border: 1px solid lightgrey;
+    border-radius: 1em;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    outline: none;
+
+    transform: translate(0, 50%);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+.profile {
+    background-image: url(images/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 0.45em;
+    border-top-right-radius: 0.45em;
+    height: 25em;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    padding: 2em 0 1em 0;
+}
+
+.info p {
+    margin: 2px 0;
+}
+
+.name {
+    margin: 0;
+    text-shadow: 1px 1px 1px black;
+}
+
+.user {
+    margin: 0.4em 0 0 0;
+}
+
+.header {
+    font-family: 'Alice', serif;
+    color: #9c9c9c;
+}
+
+.stat {
+    font-size: 1.4em;
+}
+
+.shadow {
+    box-shadow: 0px 0px 2.5em #7d7d7d;
+}

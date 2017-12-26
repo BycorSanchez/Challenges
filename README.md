@@ -15,3 +15,4 @@ Web creation challenges to practice HTML, CSS and JavaScript.
 9. [Personal web (Front)](webs/09-11202017/README.md)
 10. [Personal web (Gallery)](webs/10-11212017/README.md)
 11. [Personal web (Footer)](webs/11-11222017/README.md)
+12. [Stats](webs/12-11232017/README.md)
