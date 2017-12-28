@@ -24,6 +24,9 @@ body {
         Footer background color & scrollbar: #DCE3E2;
 */
 
+h1 {
+    font-size: 2em;
+}
 
 /* Menu */
 
@@ -87,18 +90,18 @@ body {
     padding: 0;
 }
 
-#nav ul li a {
+#nav a {
     display: block;
     padding: 1em 2em 1em 2em;
 }
 
-#nav ul li a span {
+#nav a span {
     position: relative;
     display: block;
     font-size: 1.1em;
 }
 
-#nav ul li a span:before {
+#nav a span:before {
     position: absolute;
     left: 0;
     font-family: FontAwesome;
@@ -112,7 +115,7 @@ body {
     background-color: #1d2023;
 }
 
-#nav ul li a.active span:before {
+#nav a.active span:before {
     color: #FFBA73;
 }
 
@@ -131,9 +134,6 @@ body {
 #menu-footer a:hover {
     color: #FFFFFF;
 }
-
-
-
 
 
 /* Markdown ico */
@@ -169,9 +169,6 @@ body {
     background-color: rgba(128, 136, 144, 0.5);
     border-radius: 10%;
 }
-
-
-
 
 
 /* Main */
@@ -216,13 +213,6 @@ section:nth-child(even) {
     background-color: #DCE3E2;
 }
 
-h1 {
-    font-size: 2em;
-}
-
-
-
-
 
 /* Custom Scroll bar */
 
@@ -243,12 +233,6 @@ h1 {
 }
 
 
-
-
-
-
-
-
 /* Middle */
 
 @media screen and (max-width: 960px) and (min-width: 737px) {
@@ -257,12 +241,12 @@ h1 {
         margin-bottom: 0.5em;
     }
 
-    #nav ul li a span {
+    #nav a span {
         font-size: 0.9em;
         padding-right: 0.5em;
     }
 
-    #nav ul li a span:before {
+    #nav a span:before {
         left: 100%;
     }
 
@@ -275,12 +259,6 @@ h1 {
         height: 19px;
     }
 }
-
-
-
-
-
-
 
 
 /* Mobile */
