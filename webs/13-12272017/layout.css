@@ -18,8 +18,10 @@ body {
             Links: rgba(255, 255, 255, 0.5)
             Fa icons: #41484c
             Header2: #ffffff
-            Active links: #ffffff
-            Active fa icons: #ffba73 
+
+            Nav
+                Active links: #ffffff
+                Active fa icons: #ffba73 
 
             Footer
                 Hover icons: #ffffff
@@ -100,16 +102,6 @@ ul {
     color: #ffffff;
 }
 
-#menu a.active-link {
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #1d2023;
-}
-
-#menu a.active-link .fa:before {
-    color: #ffba73;
-}
-
 #logo {
     position: relative;
     margin: 2em 2em 0 2em;
@@ -148,6 +140,16 @@ ul {
     line-height: 1.3em;
 }
 
+#nav a.active-link {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1d2023;
+}
+
+#nav a.active-link .fa:before {
+    color: #ffba73;
+}
+
 #menu-footer {
     text-align: center;
     font-size: 1.5em;
@@ -167,8 +169,7 @@ ul {
 
 .markdown {
     vertical-align: middle;
-    width: 39px;
-    height: 24px;
+    width: 34px;
     border-radius: 4px;
     background-color: #41484c;
     transition: all 0.3s ease-in-out;
@@ -275,7 +276,6 @@ ul {
 
     .markdown {
         width: 30px;
-        height: 19px;
     }
 }
 
@@ -284,16 +284,23 @@ ul {
 
 @media screen and (max-width: 736px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     #menu {
-        display: none;
+        opacity: 0;
+        transition: all 0.4s ease-out;
     }
 
     #main {
         margin-left: 0;
+        transition: all 0.4s ease-in-out;
     }
 
     #menu-icon {
         display: block;
+        transition: all 0.4s ease-in-out;
     }
 
     /*  Hide scrollbar */
@@ -310,6 +317,7 @@ ul {
     }
 
     body.menu-visible #menu {
+        opacity: 1;
         display: flex;
         width: 275px;
 
