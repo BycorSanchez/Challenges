@@ -8,7 +8,6 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-
 /* 
     Palette 
         Menu
@@ -53,6 +52,10 @@ h1 {
 
 ul {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .banner {
@@ -162,7 +165,11 @@ ul {
 
 #menu-footer .fa:hover {
     color: #ffffff;
+
     transition: color 0.4s ease-in-out;
+    -webkit-transition: color 0.4s ease-in-out;
+    -moz-transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out;
 }
 
 /* Markdown ico */
@@ -172,7 +179,11 @@ ul {
     width: 34px;
     border-radius: 4px;
     background-color: #41484c;
+
     transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
 }
 
 .markdown:hover {
@@ -208,11 +219,20 @@ ul {
 }
 
 #footer {
-    padding: 2.5em 0 3.5em 0;
+    padding: 2em 1em 3em 1em;
     text-align: center;
     color: #888888;
     font-weight: lighter;
     background-color: #dce3e2;
+}
+
+#footer * {
+    display: inline;
+    margin: 0 0.5em;
+}
+
+#topIcon {
+    float: right;
 }
 
 /* Custom Scroll bar */
@@ -245,9 +265,19 @@ ul {
     margin: 1em;
 }
 
-#menu-icon .fa {
+#top-icon {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    outline: 0;
+    border: 0;
+    margin: 1em;
+}
+
+.icon .fa {
     color: #ffffff;
-    padding: 0.5em 0.8em;
+    padding: 0.5em 0.7em;
     background-color: rgba(128, 136, 144, 0.5);
     border-radius: 10%;
 }
@@ -288,23 +318,36 @@ ul {
 
 @media screen and (max-width: 736px) {
 
-    body{
+    body {
         overflow-x: hidden;
     }
 
     #menu {
+        visibility: hidden;
         opacity: 0;
+
         transition: all 0.4s ease-out;
+        -webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition: all 0.4s ease-out;
     }
 
     #main {
         margin-left: 0;
+
         transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
     }
 
     #menu-icon {
         display: block;
+
         transition: transform 0.4s ease-in-out;
+        -webkit-transition: transform 0.4s ease-in-out;
+        -moz-transition: transform 0.4s ease-in-out;
+        -o-transition: transform 0.4s ease-in-out;
     }
 
     /*  Hide scrollbar */
@@ -321,6 +364,7 @@ ul {
     }
 
     body.menu-visible #menu {
+        visibility: visible;
         opacity: 1;
         display: flex;
         width: 275px;
