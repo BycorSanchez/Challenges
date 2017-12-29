@@ -2,6 +2,8 @@
 
 # Preview
 
+![Preview](images/preview.jpg)
+
 # Demo Images
 
 Photo by César Couto on Unsplash  
@@ -9,3 +11,8 @@ Photo by César Couto on Unsplash
 
 Markdown mark by dcurtis  
 [https://github.com/dcurtis/markdown-mark](https://github.com/dcurtis/markdown-mark)
+
+# Acknowledge
+
+Mockup design by ajlkn from [HTML5 UP](https://html5up.net/)  
+[https://html5up.net/prologue](https://html5up.net/prologue)
