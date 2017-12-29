@@ -137,7 +137,7 @@ ul {
 #nav .fa:before {
     position: absolute;
     left: 0;
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 
 #nav a.active-link {
@@ -172,7 +172,7 @@ ul {
     width: 34px;
     border-radius: 4px;
     background-color: #41484c;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .markdown:hover {
@@ -261,12 +261,12 @@ ul {
         margin-bottom: 0.5em;
     }
 
-    #nav a span {
+    #nav .fa {
         font-size: 0.9em;
-        padding-right: 0.5em;
     }
 
-    #nav a span:before {
+    #nav .fa:before {
+        padding-left: 0.3em;
         left: 100%;
     }
 
@@ -295,12 +295,12 @@ ul {
 
     #main {
         margin-left: 0;
-        transition: all 0.4s ease-in-out;
+        transition: transform 0.4s ease-in-out;
     }
 
     #menu-icon {
         display: block;
-        transition: all 0.4s ease-in-out;
+        transition: transform 0.4s ease-in-out;
     }
 
     /*  Hide scrollbar */
