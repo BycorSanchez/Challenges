@@ -11,21 +11,53 @@ body {
 
 /* 
     Palette 
-        Menu & scrollbar background: #222529
-        Nav links, logo description: rgba(255, 255, 255, 0.5);
-        Logo title & active link: #ffffff;
-        Active nav icon: #ffba73;
-        Inactive nav icon: #41484c;
-        Main page background: #f3f8f8;
-        Even sections background & footer icons: #e9eeee;
-        Menu icon: rgba(128, 136, 144, 0.5);
-        Title font color: rgba(255, 255, 255, 0.75);
-        Footer font color : #888888;
-        Footer background color & scrollbar: #dce3e2;
+        Menu
+            Background: #222529
+            Font: #ffffff
+
+            Links: rgba(255, 255, 255, 0.5)
+            Fa icons: #41484c
+            Header2: #ffffff
+            Active links: #ffffff
+            Active fa icons: #ffba73 
+
+            Footer
+                Hover icons: #ffffff
+
+        Menu Scrollbar
+            Background: #222529
+            Scroll: #dce3e2
+
+        Main
+            Background: #f3f8f8
+            Font: #000000
+            Even sections: #e9eeee
+
+            Top
+                Font: rgba(255, 255, 255, 0.75)
+
+            Footer
+                Font: #888888
+                Background: #dce3e2
+
+        Menu icon
+            Background: rgba(128, 136, 144, 0.5)
+            Font: #ffffff
 */
 
 h1 {
     font-size: 2em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.banner {
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* Menu */
@@ -45,18 +77,37 @@ h1 {
     -ms-justify-content: space-between;
 
     background-color: #222529;
+    color: #ffffff;
     position: fixed;
     height: 100%;
     width: 25%;
     text-align: right;
     overflow-y: auto;
     font-weight: lighter;
+}
+
+#menu a {
+    text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
 }
 
-#menu header a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
+#menu .fa {
+    color: #41484c;
+}
+
+#menu h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+#menu a.active-link {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1d2023;
+}
+
+#menu a.active-link .fa:before {
+    color: #ffba73;
 }
 
 #logo {
@@ -71,22 +122,12 @@ h1 {
     height: 48px;
 }
 
-#logo h2 {
-    margin: 0;
-    color: #ffffff;
-}
-
 #logo p {
     margin: 0;
     font-size: 0.85em;
 }
 
-#nav {
-    display: block;
-}
-
 #nav ul {
-    list-style-type: none;
     padding: 0;
 }
 
@@ -95,28 +136,16 @@ h1 {
     padding: 1em 2em 1em 2em;
 }
 
-#nav a span {
+#nav .fa {
     position: relative;
     display: block;
     font-size: 1.1em;
 }
 
-#nav a span:before {
+#nav .fa:before {
     position: absolute;
     left: 0;
-    font-family: FontAwesome;
-    color: #41484c;
     line-height: 1.3em;
-}
-
-.active-link {
-    font-weight: bold !important;
-    color: #ffffff !important;
-    background-color: #1d2023;
-}
-
-#nav a.active-link span:before {
-    color: #ffba73;
 }
 
 #menu-footer {
@@ -127,14 +156,12 @@ h1 {
 
 #menu-footer a {
     margin: 0 0.5em;
-    color: #41484c;
-    transition: all 0.4s ease-in-out;
 }
 
-#menu-footer a:hover {
+#menu-footer .fa:hover {
     color: #ffffff;
+    transition: color 0.4s ease-in-out;
 }
-
 
 /* Markdown ico */
 
@@ -144,52 +171,28 @@ h1 {
     height: 24px;
     border-radius: 4px;
     background-color: #41484c;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .markdown:hover {
     background-color: #ffffff;
 }
 
-#menu-icon {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    outline: 0;
-    border: 0;
-    margin: 1em;
-}
-
-#menu-icon span {
-    color: white;
-    padding: 0.5em 0.8em;
-    background-color: rgba(128, 136, 144, 0.5);
-    border-radius: 10%;
-}
-
-
 /* Main */
 
 #main {
     margin-left: 25%;
     background-color: #f3f8f8;
+    color: #000000;
 }
 
-.banner {
-    background-image: url(images/banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-section {
+#main section {
     padding: 1% 7% 5% 7%;
     text-align: justify;
     box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 }
 
-section:nth-child(even) {
+#main section:nth-child(even) {
     background-color: #e9eeee;
 }
 
@@ -211,7 +214,6 @@ section:nth-child(even) {
     background-color: #dce3e2;
 }
 
-
 /* Custom Scroll bar */
 
 .dark-scrollbar::-webkit-scrollbar-track {
@@ -228,6 +230,25 @@ section:nth-child(even) {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #dce3e2;
+}
+
+/* Icon menu */
+
+#menu-icon {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    outline: 0;
+    border: 0;
+    margin: 1em;
+}
+
+#menu-icon .fa {
+    color: #ffffff;
+    padding: 0.5em 0.8em;
+    background-color: rgba(128, 136, 144, 0.5);
+    border-radius: 10%;
 }
 
 
